@@ -9652,13 +9652,12 @@ https://boffosocko.com/2020/04/04/self-hosting-tiddlywiki-with-github-pages/
  
 &lt;&lt;list-links filter:&quot;[&lt;currentTiddler&gt;days :created[-0]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20200409135722234" creator="john" modified="20200409141941728" modifier="john" tags="Journal" title="9th April 2020">
+<div created="20200409135722234" creator="john" current-tiddler="" modified="20200409143632930" modifier="john" tags="Journal" title="9th April 2020">
 <pre>Going to start making a list of the birds seen in Victoria Park. Might end up with tiddlers for each.
 
-[[Victoria Park Birds]]
+ 
 
-
-&lt;&lt;list-links filter:&quot;[sameday:created[20200409]]&quot;&gt;&gt;</pre>
+&lt;&lt;list-links filter:&quot;[sameday:created[20200409]!prefix[$]!prefix[Draft]!tag[Journal]]&quot;&gt;&gt;</pre>
 </div>
 <div created="20200407163732942" creator="john" modified="20200407164302868" modifier="john" tags="poem" title="April 7, 1969">
 <pre>&quot;&quot;&quot;
@@ -9672,15 +9671,18 @@ Richard Brautigan (1969)
 
 From &lt;a href=&quot;https://tinyletter.com/pome&quot;&gt;Pome by Matthew Ogle&lt;/a&gt;</pre>
 </div>
-<div created="20200407163345957" creator="john" draft.of="7th April 2020" draft.title="7th April 2020" modified="20200409141010111" modifier="john" tags="Journal" title="Draft of '7th April 2020' by john">
+<div created="20200407163345957" creator="john" draft.of="7th April 2020" draft.title="7th April 2020" modified="20200409143523633" modifier="john" tags="Journal" title="Draft of '7th April 2020' by john">
 <pre>Got this wiki up and running using the instructions from Chris:
 https://boffosocko.com/2020/04/04/self-hosting-tiddlywiki-with-github-pages/
 
 
-!!Today's pages
+!!Today's pages - not working yet
 &lt;&lt;list-links filter:&quot;[!is[system]!tag[Journal]![&lt;currentTiddler&gt;days[-0]!sort[created]]&quot;&gt;&gt;
  
-&lt;&lt;list-links filter:&quot;[&lt;currentTiddler&gt;days :created[-0]]&quot;&gt;&gt;</pre>
+&lt;&lt;list-links &quot;[all[tiddlers]!prefix[$]!prefix[Draft]days:created[-0]!sort[modified]limit[8]!tag[Journal]]&quot;&gt;&gt;
+
+-----
+ </pre>
 </div>
 <div created="20200407164111148" creator="john" modified="20200409135656500" modifier="john" tags="tiddlywiki tip" title="hardline breaks">
 <pre>&lt;&lt; 
