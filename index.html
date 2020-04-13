@@ -436,13 +436,13 @@ Error message and password prompt
 
 <li>Moorhen</li>
 
-<li>New Tiddler</li>
-
 <li>Parakeet</li>
 
 <li>Redwing</li>
 
 <li>Starling</li>
+
+<li>Tag With BirdNew Tiddler</li>
 
 <li>Tufted Duck</li>
 
@@ -9813,11 +9813,11 @@ GettingStarted
 <div created="20200407162506360" modified="20200407162506360" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200412100450922" creator="john" modified="20200412182940974" modifier="john" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Shadows</pre>
+<div created="20200412100450922" creator="john" modified="20200413163733036" modifier="john" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200407164241996" creator="john" modified="20200412184743600" modifier="john" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200407164241996" creator="john" modified="20200413163731289" modifier="john" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200407162723762" modified="20200407162726770" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -9828,7 +9828,7 @@ GettingStarted
 <div created="20200407163333836" creator="j" modified="20200407163334213" modifier="joh" title="$:/status/UserName">
 <pre>john</pre>
 </div>
-<div created="20200413163426603" creator="john" list="[[New Tiddler]] Parakeet Dabchick Moorhen [[Tufted Duck]] Starling Crow Jackdaw [[Long tailed Tit]] Redwing" modified="20200413163619912" modifier="john" title="$:/StoryList">
+<div created="20200413163426603" creator="john" list="[[Tag With BirdNew Tiddler]] Parakeet Dabchick Moorhen [[Tufted Duck]] Starling Crow Jackdaw [[Long tailed Tit]] Redwing" modified="20200413163619912" modifier="john" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10847,18 +10847,6 @@ apart from this one
 <div created="20200412092059556" creator="john" modified="20200412092102642" modifier="john" title="Moorhen">
 <pre>&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/troutcolor/49752668988/in/dateposted/&quot; title=&quot;IMG_0906&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/49752668988_e924c80d73_z.jpg&quot; width=&quot;640&quot; height=&quot;480&quot; alt=&quot;IMG_0906&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
 </div>
-<div created="20200413163630118" creator="john" modified="20200413163709850" modifier="john" tags="" title="New Tiddler">
-<pre>$set name=&quot;tag&quot; value=&quot;Bird&quot;&gt;
-&lt;$button&gt;
-Tag &lt;$count filter={{tiddlers-filter}}/&gt; tiddlers with &lt;&lt;tag&gt;&gt;
-&lt;$list filter={{tiddlers-filter}}&gt;
-&lt;$action-listops $tags=&lt;&lt;tag&gt;&gt;/&gt;
-&lt;/$list&gt;
-&lt;/$button&gt;
-&lt;/$set&gt;
-
-</pre>
-</div>
 <div created="20200412103743512" creator="john" modified="20200412103746460" modifier="john" title="Parakeet">
 <pre>&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/troutcolor/35269201206/in/photolist-27xWKgC-VJBSKY-2htxX5k-2htx1uc-29vzrkA-27R8NiS-27R8PjE-257F1hA-VJBSM1-UvCm4Q-2hpdVJf-2hpeMm7-2hpc2v1&quot; title=&quot;parakeets&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4240/35269201206_6e298c0fbc_z.jpg&quot; width=&quot;640&quot; height=&quot;360&quot; alt=&quot;parakeets&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
 </div>
@@ -10867,6 +10855,14 @@ Tag &lt;$count filter={{tiddlers-filter}}/&gt; tiddlers with &lt;&lt;tag&gt;&gt;
 </div>
 <div created="20200412091931400" creator="john" modified="20200412091936482" modifier="john" title="Starling">
 <pre>&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/troutcolor/49753197576/in/dateposted/&quot; title=&quot;IMG_0863&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/49753197576_ba412096ea_z.jpg&quot; width=&quot;640&quot; height=&quot;480&quot; alt=&quot;IMG_0863&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
+</div>
+<div created="20200413163630118" creator="john" modified="20200413163843754" modifier="john" tags="" title="Tag With BirdNew Tiddler">
+<pre>&lt;$button&gt;Tag with bird
+&lt;$list filter='[list[$:/StoryList]]'&gt;
+&lt;$action-listops $tags=&quot;bird&quot;/&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+</pre>
 </div>
 <div created="20200412100007913" creator="john" modified="20200412100010382" modifier="john" title="Tufted Duck">
 <pre>&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/troutcolor/49725460747/in/dateposted/&quot; title=&quot;Untitled&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/49725460747_a2ecca4810_z.jpg&quot; width=&quot;640&quot; height=&quot;640&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
